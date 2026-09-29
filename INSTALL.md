@@ -14,7 +14,7 @@ Open your AI assistant and paste:
 
 ```
 Install the lorekeeper skill for yourself, then start using it.
-Source: https://github.com/<owner>/lorekeeper
+Source: https://github.com/a42599-blip/lorekeeper
 ```
 
 The assistant will copy the folder into its own skills directory and reload.
@@ -33,7 +33,7 @@ A working install answers: *"I don't have a profile for you yet — want to star
 ### 1. Get the files
 
 - **Download ZIP**: on the repository page → `Code` → `Download ZIP`, then unzip, **or**
-- **Git**: `git clone https://github.com/<owner>/lorekeeper.git`
+- **Git**: `git clone https://github.com/a42599-blip/lorekeeper.git`
 
 ### 2. Find your assistant's skills directory
 
@@ -81,13 +81,13 @@ If you prefer a terminal:
 **macOS / Linux**
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/<owner>/lorekeeper/main/_install/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/a42599-blip/lorekeeper/main/_install/install.sh | bash
 ```
 
 **Windows (PowerShell)**
 
 ```powershell
-irm https://raw.githubusercontent.com/<owner>/lorekeeper/main/_install/install.ps1 | iex
+irm https://raw.githubusercontent.com/a42599-blip/lorekeeper/main/_install/install.ps1 | iex
 ```
 
 Both scripts only copy the `lorekeeper` folder into your skills directory.

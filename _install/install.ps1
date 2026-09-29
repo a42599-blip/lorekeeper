@@ -4,7 +4,7 @@
 
 $ErrorActionPreference = "Stop"
 
-$RepoUrl = if ($env:REPO_URL) { $env:REPO_URL } else { "https://github.com/<owner>/lorekeeper.git" }
+$RepoUrl = if ($env:REPO_URL) { $env:REPO_URL } else { "https://github.com/a42599-blip/lorekeeper.git" }
 $TargetDir = if ($env:SKILLS_DIR) { $env:SKILLS_DIR } else { Join-Path $HOME ".agents\skills" }
 $Destination = Join-Path $TargetDir "lorekeeper"
 

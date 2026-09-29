@@ -5,7 +5,7 @@
 
 set -euo pipefail
 
-REPO_URL="${REPO_URL:-https://github.com/<owner>/lorekeeper.git}"
+REPO_URL="${REPO_URL:-https://github.com/a42599-blip/lorekeeper.git}"
 TARGET_DIR="${SKILLS_DIR:-$HOME/.agents/skills}"
 
 echo "lorekeeper installer"

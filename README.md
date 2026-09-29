@@ -83,7 +83,7 @@ Paste this to your AI assistant:
 
 ```
 Install the lorekeeper skill for yourself and start using it:
-https://github.com/<owner>/lorekeeper
+https://github.com/a42599-blip/lorekeeper
 ```
 
 **B. Copy the folder (manual)**
