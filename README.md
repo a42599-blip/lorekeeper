@@ -170,7 +170,8 @@ or present it as your own work. See [LICENSE](LICENSE).
 
 ## Author
 
-<!-- TODO(publish): add the author line and link here before publishing. -->
+Built by [@a42599-blip](https://github.com/a42599-blip).
+Other work: <https://scefo.com>
 
 ---
 
