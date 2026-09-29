@@ -1,0 +1,35 @@
+LICENSE — lorekeeper
+====================
+
+Copyright (c) 2026. All rights reserved.
+
+You ARE permitted to:
+
+  1. Download this work.
+  2. Use it for personal or commercial purposes, as-is.
+  3. Read and study the source.
+  4. Share a link to the original project, or recommend it, with attribution.
+
+You are NOT permitted to:
+
+  1. Modify this work and distribute the modified version.
+  2. Redistribute this work, in whole or in part, as a standalone product or
+     bundled inside another product.
+  3. Sell, sublicense, or otherwise commercially exploit this work as your own.
+  4. Claim authorship, or remove/replace the attribution and copyright notices.
+  5. Present a derivative of this work as an original creation.
+
+This is a source-available, all-rights-reserved licence. It is NOT an open-source
+licence, and the project must not be described as open source.
+
+Third-party tools referenced by this work (for example video muxers, text-to-speech
+engines or generative models) carry their own licences. Nothing in this licence grants
+rights to those; you are responsible for complying with their terms.
+
+THE WORK IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING FROM, OUT OF OR IN CONNECTION WITH
+THE WORK OR THE USE OF THE WORK.
+
+For permission beyond the scope above, contact the author.
