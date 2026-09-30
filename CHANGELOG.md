@@ -3,6 +3,16 @@
 All notable changes to this project are recorded here.
 Format: date — change. Versions are loose (this is a document-driven skill).
 
+## [0.4.1] — 2026-09-30
+
+- `AGENTS.md`: added one rule learned from a live test — **state the destination path before writing**
+  (*“I am going to install it at `<full path>`”*). During testing, an assistant correctly followed
+  `AGENTS.md` and installed itself, but did it silently into the user's home directory. Correct behaviour,
+  surprising side effect; the rule now forbids the silent part.
+- Verified live: an assistant was given the repository and the instruction *“install this skill”*;
+  with no further guidance it read `AGENTS.md`, installed the folder, and ran the exact verification
+  steps from section 1 step 3 (SKILL.md present · `name: lorekeeper` · `references/` and `tasks/` present).
+
 ## [0.4.0] — 2026-09-30
 
 **Now readable by people *and* by AI — including the ZIP route.**

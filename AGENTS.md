@@ -40,6 +40,10 @@ It is portable: any assistant that loads skills from a directory can use it.
 If you do not know your own skills directory, use the one for your own product. If you have none,
 stop and tell the user — do not invent a location.
 
+**Say the destination out loud before you write.** One line: *“I am going to install it at
+`<full path>`.”* Never write to a location the user has not been told about — a silent install into
+someone's home directory is a surprise, and surprises are not help.
+
 ### Step 2 — put this folder there
 
 The required end state is exactly: **`<skills dir>/lorekeeper/SKILL.md`** must exist.
@@ -134,6 +138,7 @@ Read `SKILL.md` and act on it. In short: keep a memory folder (`~/.lorekeeper/` 
 2. 把本倉庫的內容放到 **`<技能目錄>/lorekeeper/`**，**確認 `<技能目錄>/lorekeeper/SKILL.md` 存在**（資料夾名要叫 `lorekeeper`，`SKILL.md` 要在最上層）。
 3. 如果你不能複製檔案 → 請使用者貼下面那一行指令（Windows 用 `irm ... | iex`；Mac／Linux 用 `curl ... | bash`）。
 4. **驗證**：`SKILL.md` 在、frontmatter 有 `name: lorekeeper`、`references/` 與 `tasks/` 都在。**沒驗證就不要說裝好了。**
+4-b. **動手前先講你要裝到哪個路徑**（一行就好），不要暗暗把東西寫進別人的家目錄。
 5. 叫使用者**重開 AI**（或 `/reload`），然後說「用 lorekeeper 幫我開始」。
 
 **不要**：順便裝別的東西、動別人的技能、動使用者的記憶資料夾（`~/.lorekeeper/`）。
