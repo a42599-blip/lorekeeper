@@ -3,6 +3,55 @@
 All notable changes to this project are recorded here.
 Format: date — change. Versions are loose (this is a document-driven skill).
 
+## [0.7.0] — 2026-09-30
+
+**The competitive part is now visible: how it works, and why it beats the alternative.**
+
+Three new diagrams in `assets/` (generated, not hand-drawn):
+
+| Image | Shows |
+|:---|:---|
+| `process.png` | **What actually happens when you give it a task** — you ask → main skill (five laws + baseline rules) → classify task → read **that one** task pack → plan → step-by-step with a check per step → self-check the result → round-closing self-check → and the loop that writes the lesson and the pack for next time |
+| `compare.png` | **The same task, two different days** — most assistants: generate first, broken text, overlapping narration, “done”, two hours of redoing. lorekeeper: classify → task pack → plan → audio before timeline → laid-out text → self-check → round self-check report → write the pack so the next one is faster. Plus the four “why download it” reasons |
+| `selfcheck.png` | **Every round, it cleans up after itself** — the report block (dead code / dead text / stale data / what it caught itself) beside what it actually deletes, and the contrast with assistants that only ever accumulate |
+
+- `README.md`: the *How it works* section now leads with the process diagram, and *What is different* was renamed to **“What is different — and why it is worth downloading”**, leading with the side-by-side comparison.
+- Banner updated with a **每輪自我清潔** chip, so the front page states the capability above the fold.
+- Promo material (outside this repository): the video gained a frame and a narration line for the round self-check
+  (11 frames, 54.4 s Traditional/Simplified, 48.2 s male backup), and the post drafts gained a section of
+  ready-to-use “why it is stronger” lines in Traditional Chinese, Simplified Chinese and English.
+
+## [0.6.0] — 2026-09-30
+
+**Every round now ends with a self-check report — the skill sweeps its own work and cleans it up.**
+
+New section in `SKILL.md` (both languages): **The round-closing self-check — never report without it.**
+
+1. Sweep for dead code → zero, every round (not at the end of the project).
+2. Sweep for dead text and **stale data** — superseded passages, notes that are no longer true
+   (wrong paths, stale versions, lessons that no longer apply), files nothing links to.
+3. Say what was found and removed — even when it is “nothing”.
+4. Report **what it caught by itself**: a bug noticed while verifying, a wrong assumption, a better method — fixed, then disclosed.
+5. List what is still open.
+
+And it must be reported in one short block:
+
+```
+Round self-check
+- dead code .......... 0   (or: removed <what, where>)
+- dead text / stale data 0 (or: removed <what, where>)
+- caught myself ..... <bug / wrong assumption / better method> — fixed, verified how
+- not done / untested <list>
+```
+
+The definition-of-done list requires this block. `README.md` now shows it to human readers (with the
+reason it matters), and the Traditional Chinese section of `README.md` plus the promo post drafts
+mention it as a selling point.
+
+Background: this is exactly how work was reported on our own projects — *“dead code: 0”*, and
+*“this round I found and fixed the following bug myself”* — so it is now part of the public skill
+instead of staying a private habit.
+
 ## [0.5.0] — 2026-09-30
 
 **AI instructions are now visible on the front page, and dead text counts as dead code.**

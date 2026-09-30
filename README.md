@@ -101,6 +101,26 @@ The goal is simple: **remove everyday pain — not add one more tool to learn.**
 | **B3** | **Announce before you write or install.** | One line: what you are about to create, change or install, and where. Never modify the owner's environment without telling them first. |
 | **B4** | **No unverified success.** | "Done" means you ran the check and can point at its output. Otherwise say "not tested yet". |
 
+### Every round ends with a self-check report
+
+Before reporting back, the assistant sweeps its own work and says so — the way you would report
+“zero dead code” at the end of a shift:
+
+```
+Round self-check / 本輪自檢
+- 廢碼 dead code .......... 0     (or: removed <what, where>)
+- 廢文字/stale data ....... 0     (or: removed <what, where>)
+- 我自己抓到 caught myself . <a bug it noticed · a wrong assumption · a better method> — fixed, verified how
+- 還沒做 / untested ....... <list>
+```
+
+It **deletes what it produced that is no longer useful** — unused code, superseded paragraphs, stale
+notes, orphaned files — every round, not at the end of the project, and tells you what it removed and
+what it caught by itself. “All done” without this block does not count.
+
+Why it matters: work that is never swept gets slower and less trustworthy every week — the opposite of
+what this skill is for.
+
 ---
 
 ## It gets stronger every time (the loop)
@@ -127,6 +147,8 @@ The strength accumulates.
 ---
 
 ## How it works (three layers)
+
+![What actually happens when you give it a task](assets/process.png)
 
 ```
 MAIN SKILL  (always read — deliberately thin)
@@ -205,7 +227,21 @@ What should *not* happen: the assistant silently generates random footage and de
 
 ---
 
-## What is different from “just having a memory file”?
+## What is different — and why it is worth downloading
+
+![The same task, two very different days](assets/compare.png)
+
+The same request — *“make me a 30-second promo video”* — takes two very different paths.
+On the right, every step is one a competing assistant skips: classifying the task before starting,
+writing the plan first, **audio before the timeline** (so narration can never overlap), **laying out
+text instead of generating it** (so letters never break), checking the result against a list, reporting
+its own self-check, and then writing the procedure down so the next video is faster.
+
+**Why you would download it rather than keep using what you have:** less money spent on wrong
+diagnoses (evidence before conclusions, a cheap test before any paid “fix”), less redoing (plan +
+per-step verification + self-check instead of one-shot output), faster every time (it writes its own
+task packs and lesson ledger), and it never quietly rots (every round it deletes its own dead code,
+dead text and stale notes — and tells you what it caught).
 
 | | Plain memory note | Prompt template | **lorekeeper** |
 |:---|:---:|:---:|:---:|
@@ -213,7 +249,7 @@ What should *not* happen: the assistant silently generates random footage and de
 | **Gets stronger over time** | ❌ | ❌ | ✅ **writes its own task packs** |
 | Anti-hallucination rules | ❌ | ❌ | ✅ evidence + confidence labels; test before spending |
 | Anti-slacking rules | ❌ | ❌ | ✅ plan, per-step checks, no faked tests, leftovers listed |
-| **No dead code / no dead text** | ❌ | ❌ | ✅ enforced every round, not at the end |
+| **No dead code / no dead text** | ❌ | ❌ | ✅ enforced **and reported** every round |
 | Tool discovery + safety vetting | ❌ | ❌ | ✅ search → 🟢🟡🔴 → ask before installing |
 | Lessons from other people | ❌ | ❌ | ✅ recorded next to your own |
 | Context discipline | — | ❌ (eats context) | ✅ thin main skill + packs loaded on demand |

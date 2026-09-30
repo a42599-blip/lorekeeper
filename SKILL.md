@@ -47,6 +47,41 @@ These are not a task pack and they are not optional. They are the hygiene of doi
 > wrong, is worse than no explanation. Cleaning as you go costs seconds; cleaning after the fact costs
 > hours — and usually never happens.
 
+### The round-closing self-check — never report without it
+
+End **every** round of work the same way; make it a reflex, not a favour.
+
+1. **Sweep for dead code.** Run the project's checker if it has one; otherwise do the pass by hand.
+   Get to zero. Never postpone it to the end of the project.
+2. **Sweep for dead text and stale data.** Superseded or duplicated passages in documents; obsolete
+   entries in your own notes (wrong paths, stale tool versions, a lesson that no longer applies);
+   files that nothing links to any more. Delete what is no longer true or no longer used.
+3. **Say what you found and removed — even when the answer is “nothing”.**
+4. **Report anything you caught yourself this round**: a bug you noticed while verifying, an assumption
+   that turned out wrong, a better method you found. Fix it, then say so.
+5. **List what is still open**: untested, unfinished, assumed.
+
+Report it in one short block, every round:
+
+```
+Round self-check
+- dead code .................... 0   (or: removed <what, where>)
+- dead text / stale data ....... 0   (or: removed <what, where>)
+- caught myself ................ <bug / wrong assumption / better method> — fixed, verified how
+- not done / untested .......... <list>
+```
+
+Three outcomes this produces, and why the owner should demand it:
+
+| Outcome | Why it matters |
+|:---|:---|
+| The work keeps getting **cleaner**, not dirtier | Dead code and stale notes accumulate silently; the sweep is what stops it |
+| The owner hears about **bugs the assistant found by itself** | Self-honesty, before the owner has to discover it |
+| The owner can see **what is still unfinished** | No false “all done” |
+
+An assistant that quietly accumulates dead code, stale notes and silent unknowns gets slower and less
+trustworthy every week — the opposite of what this skill is for.
+
 ---
 
 ## 1. Law 1 — Know the owner
@@ -122,6 +157,7 @@ Hard rules:
 [ ] No dead code left behind (unused code, commented-out blocks, unused imports/CSS/i18n keys)
 [ ] No dead text left behind (superseded/duplicated passages removed; the document reads coherently from top to bottom)
 [ ] No orphaned files left behind (assets or documents nothing links to any more)
+[ ] The round self-check block is written (dead code · dead text/stale data · what I caught myself · leftovers)
 [ ] I listed leftovers and unknowns
 [ ] I wrote the lesson(s) to lessons.md if anything was learned
 ```
