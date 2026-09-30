@@ -128,6 +128,9 @@ diagrams in `assets/`, and any promo material. A half-updated manual is a bug.
 
 ## 4. Hard constraints (do not violate)
 
+- **Deleting: to the trash, never for real.** Files, folders and temporary files are moved to the recycle
+  bin / trash, never permanently deleted, and you never empty the trash — that is the owner's decision.
+  If the trash tool is unavailable, stop and ask.
 - **Licence: all rights reserved.** You may copy this skill for the user's own use.
   You may **not** re-upload it, modify and redistribute it, or present it as your own work.
   See [LICENSE](LICENSE).
@@ -209,6 +212,8 @@ curl -fsSL https://raw.githubusercontent.com/a42599-blip/lorekeeper/main/_instal
 
 ### 硬性限制
 
+- **刪除：一律進資源回收筒，永不永久刪除。** 檔案、資料夾、暫存檔都是移到回收筒／垃圾桶，
+  不永久刪除，而且**永遠不能清空回收筒**——那是主人的決定。工具不能用就停下來問。
 - **授權：保留所有權利。** 你可以幫使用者複製自用；**不可以**重新上傳、修改後再散布、或當成自己的作品。
 - **隱私**：不要把使用者的私人資料複製到任何會離開他電腦的地方。
 - **不准默默安裝**：這顆技能要幫使用者裝任何東西，都必須先取得他明確同意。

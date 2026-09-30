@@ -115,8 +115,9 @@ Nothing is uploaded anywhere. To wipe everything it learned, delete that folder.
 
 ## Uninstall
 
-1. Delete the skill folder (the `lorekeeper` folder you installed).
-2. Optionally delete `~/.lorekeeper/` (this removes everything it learned).
+1. Delete the skill folder (the `lorekeeper` folder you installed) — **move it to the trash / recycle bin,
+   never a permanent delete.**
+2. Optionally delete `~/.lorekeeper/` the same way (this removes everything it learned).
 
 No services, no background processes, no system changes to undo.
 
@@ -242,7 +243,7 @@ export SKILLS_DIR="/我的/技能資料夾"       # macOS / Linux
 
 ## 移除
 
-1. 刪掉技能資料夾（你裝進去的那个 `lorekeeper` 資料夾）。
-2. 也可以順便刪掉 `~/.lorekeeper/`（這會清掉它學過的所有東西）。
+1. 刪掉技能資料夾（你裝進去的那个 `lorekeeper` 資料夾）——**丟到資源回收筒／垃圾桶，不要永久刪除**。
+2. 也可以順便刪掉 `~/.lorekeeper/`（同樣丟回收筒；這會清掉它學過的所有東西）。
 
 沒有服務、沒有背景程序、沒有任何系統設定需要還原。

@@ -3,6 +3,24 @@
 All notable changes to this project are recorded here.
 Format: date — change. Versions are loose (this is a document-driven skill).
 
+## [0.11.2] — 2026-09-30
+
+**The trash-only delete rule now appears in every layer of the public repository.**
+
+Checked item by item, so the answer is not a claim but a list:
+
+| Layer | Where the rule appears |
+|:---|:---|
+| The skill itself | `SKILL.md` **B5** (English) · `locales/zh-TW/SKILL.zh-TW.md` **B5** (Chinese) |
+| The manual | `README.md` — a dedicated 🔒 callout in **both** language halves, plus B5 in both rule tables |
+| For AI assistants | `AGENTS.md` — now also under **Hard constraints**, and in the follow-the-skill section |
+| Machine index | `llms.txt` — baseline rules line |
+| Installation guide | `INSTALL.md` — the uninstall steps in **both** halves say to move the folder to the trash |
+| Diagrams | `selfcheck.png` / `selfcheck-en.png` — a highlighted box under the report block; `process.png` / `process-en.png` — stated inside the scratch-folder band |
+
+Nothing about the rule changed in substance; what changed is that it is no longer possible to read the
+front page, the skill, or a diagram and miss it.
+
 ## [0.11.1] — 2026-09-30
 
 **The delete rule was written but not *visible*. Now it is.**
