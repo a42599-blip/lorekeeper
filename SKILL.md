@@ -40,6 +40,8 @@ These are not a task pack and they are not optional. They are the hygiene of doi
 | **B2** | **Replace means delete.** | When you swap an implementation, the old one goes in the same change. Never leave the previous version commented out "just in case". Version control is the just-in-case. |
 | **B3** | **Announce before you write or install.** | One line: what you are about to create, change, or install, and where. Never modify the owner's environment — files outside the project, skills, memory folders, settings — without telling them first. |
 | **B4** | **No unverified success.** | "Done" means you ran the check and can point at its output. Otherwise say "not tested yet". |
+| **B5** | **Delete to the trash — never for real.** | Deleting is irreversible; the owner's ability to recover from your mistake is not. Use the operating system's recycle bin / trash (or a `trash` command) for **everything** — files, folders, temporary files. Never `rm -rf`, never `del`, never a permanent delete, never empty the trash (that is the owner's decision alone). If the trash tool is unavailable, ask — do not upgrade to a harder delete. |
+| **B6** | **Work in a scratch folder, and clean it up when the stage is done.** | Give each task its own clearly named scratch folder (`_scratch/<task>/` or the system temp dir). Put every intermediate artefact there — drafts, downloads, extracted frames, test output. The moment a stage or the task is finished, move the scratch folder **to the trash**. Do not let temp files scatter into the project or pile up “for later”; a machine that grows fatter every week is a slow machine. |
 
 > Why B1 is baseline and not a nicety: dead code is not neutral. It hides the real code, misleads the
 > next reader (including future you), and every stale reference is a trap that breaks something later.
@@ -60,10 +62,12 @@ End **every** round of work the same way; make it a reflex, not a favour.
    logs, screenshots or generated media; private data left in anything that leaves the machine;
    anything installed without the owner's approval; any new file, download or dependency the owner
    was not told about. A clean result is the only acceptable result.
-4. **Say what you found and removed — even when the answer is “nothing”.**
-5. **Report anything you caught yourself this round**: a bug you noticed while verifying, an assumption
+4. **Sweep the scratch space.** Any temporary folder, download, extracted file or draft from this
+   round that is no longer needed goes **to the trash** — not left behind “just in case”.
+5. **Say what you found and removed — even when the answer is “nothing”.**
+6. **Report anything you caught yourself this round**: a bug you noticed while verifying, an assumption
    that turned out wrong, a better method you found. Fix it, then say so.
-6. **List what is still open**: untested, unfinished, assumed.
+7. **List what is still open**: untested, unfinished, assumed.
 
 Report it in one short block, every round:
 
@@ -72,6 +76,7 @@ Round self-check
 - dead code .................... 0
 - dead text / stale data ....... 0
 - security ..................... clean   (no secrets · no private data leaving · nothing installed unapproved)
+- scratch files ................ none left   (or: moved <what> to the trash)
 - caught myself ................ <bug / wrong assumption / better method> — fixed, verified how
 - not done / untested .......... <list>
 ```
@@ -162,7 +167,8 @@ Hard rules:
 [ ] No dead code left behind (unused code, commented-out blocks, unused imports/CSS/i18n keys)
 [ ] No dead text left behind (superseded/duplicated passages removed; the document reads coherently from top to bottom)
 [ ] No orphaned files left behind (assets or documents nothing links to any more)
-[ ] The round self-check block is written (dead code · dead text/stale data · what I caught myself · leftovers)
+[ ] No scratch files left behind (temporary folders and downloads moved to the trash)
+[ ] The round self-check block is written (dead code · dead text/stale data · security · scratch · what I caught myself · leftovers)
 [ ] I listed leftovers and unknowns
 [ ] I wrote the lesson(s) to lessons.md if anything was learned
 ```

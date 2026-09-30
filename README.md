@@ -229,10 +229,11 @@ text instead of generating it** (so letters never break), checking the result ag
 its own self-check, and then writing the procedure down so the next video is faster.
 
 **Why you would download it rather than keep using what you have:** less money spent on wrong
-diagnoses (evidence before conclusions, a cheap test before any paid "fix"), less redoing (plan +
+diagnoses (evidence before conclusions, a cheap test before any paid “fix”), less redoing (plan +
 per-step verification + self-check instead of one-shot output), faster every time (it writes its own
 task packs and lesson ledger), and it never quietly rots (every round it deletes its own dead code,
-dead text and stale notes — and tells you what it caught).
+dead text and stale notes — and tells you what it caught). The same principle applies to the machine
+underneath: temporary files go to the trash as soon as they are done with, so nothing silently grows.
 
 | | Plain memory note | Prompt template | **lorekeeper** |
 |:---|:---:|:---:|:---:|
@@ -241,6 +242,7 @@ dead text and stale notes — and tells you what it caught).
 | Anti-hallucination rules | ❌ | ❌ | ✅ evidence + confidence labels; test before spending |
 | Anti-slacking rules | ❌ | ❌ | ✅ plan, per-step checks, no faked tests, leftovers listed |
 | **No dead code / no dead text / no security slips** | ❌ | ❌ | ✅ enforced **and reported** every round |
+| **Safe deleting + scratch cleanup** | ❌ | ❌ | ✅ trash-only deletes; temporary folders cleared when the stage ends |
 | Tool discovery + safety vetting | ❌ | ❌ | ✅ search → 🟢🟡🔴 → ask before installing |
 | Lessons from other people | ❌ | ❌ | ✅ recorded next to your own |
 | Context discipline | — | ❌ (eats context) | ✅ thin main skill + packs loaded on demand |
@@ -513,6 +515,7 @@ AI：  路線：精準型（用版面與截圖）——因為裡面有文字和�
 **為什麼要下載它，而不是繼續用手上有的東西**：少花冤枉錢（先有證據才下結論，要花錢之前先用便宜的方法驗證）、
 少重做（計畫＋每步驗證＋自檢，而不是一次生成看起來做完的東西）、每次都更快（它自己寫任務包、累積教訓）、
 而且它**不會安靜地變爛**（每一輪自己清掉廢碼、廢文字、過期筆記，還會告訴你它抓到什麼）。
+同樣的原則也管到底下那台電腦：暫存檔案用完就進資源回收筒，所以不會有東西默默長大。
 
 | | 一般記憶筆記 | 提示詞模板 | **lorekeeper** |
 |:---|:---:|:---:|:---:|
@@ -521,6 +524,7 @@ AI：  路線：精準型（用版面與截圖）——因為裡面有文字和�
 | 防幻覺規則 | ❌ | ❌ | ✅ 證據＋把握程度；花錢前先測試 |
 | 防偷懶規則 | ❌ | ❌ | ✅ 計畫、每步檢查、不假裝測過、列出沒做完的 |
 | **零廢碼／零廢文字／零安全隱患** | ❌ | ❌ | ✅ 每一輪執行**並回報** |
+| **安全刪除＋過渡檔清理** | ❌ | ❌ | ✅ 只丟回收筒；階段做完暫存資料夾就清掉 |
 | 工具搜尋＋安全體檢 | ❌ | ❌ | ✅ 搜尋 → 🟢🟡🔴 → 要裝前先問 |
 | 記錄別人的教訓 | ❌ | ❌ | ✅ 跟自己的記在一起 |
 | 上下文紀律 | — | ❌（吃光上下文）| ✅ 主技能薄＋任務包按需載入 |

@@ -3,6 +3,27 @@
 All notable changes to this project are recorded here.
 Format: date — change. Versions are loose (this is a document-driven skill).
 
+## [0.10.0] — 2026-09-30
+
+**Two habits from real work, now part of the base skill: delete safely, and leave no temporary mess.**
+
+New baseline rules B5 and B6 in `SKILL.md` (both languages) and in both README halves:
+
+- **B5 — Delete to the trash, never for real.** Deleting is irreversible; the owner's ability to
+  recover from your mistake is not. Files, folders and temporary files all go to the recycle bin /
+  trash (or a `trash` command). Never `rm -rf`, never `del`, never a permanent delete, and never empty
+  the trash — that is the owner's decision alone. If the trash tool is unavailable, ask; do not upgrade
+  to a harder delete.
+- **B6 — Work in a scratch folder, clear it when the stage ends.** Give each task its own clearly named
+  scratch folder, keep every intermediate artefact there, and move the whole folder to the trash the
+  moment the stage or task finishes — not “for later”. A machine that grows fatter every week is a slow
+  machine.
+
+Supporting changes: the round self-check gained a **scratch files** line (`none left`), the
+definition-of-done list gained a matching item, the comparison table notes *safe deleting + scratch
+cleanup*, and the sticker on all ten diagrams now reads **廢碼 · 安全 · 零殘留**
+(English: **DEAD CODE · SEC · NO LEFTOVERS**).
+
 ## [0.9.0] — 2026-09-30
 
 **The strength is now impossible to miss — a shop-window sticker, and security joins the per-round check.**
