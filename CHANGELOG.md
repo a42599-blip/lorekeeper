@@ -3,6 +3,14 @@
 All notable changes to this project are recorded here.
 Format: date — change. Versions are loose (this is a document-driven skill).
 
+## [0.7.1] — 2026-09-30
+
+- **Fixed a self-caught slip, and it is a good example of the rule working.** The orphan-file sweep
+  (part of the new round self-check) found that `assets/selfcheck.png` was created but only mentioned
+  in this changelog — no document actually displayed it. `README.md` now shows it in the round
+  self-check section, where it belongs. Created-but-unused is exactly the kind of thing that otherwise
+  accumulates unnoticed.
+
 ## [0.7.0] — 2026-09-30
 
 **The competitive part is now visible: how it works, and why it beats the alternative.**

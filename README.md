@@ -118,6 +118,8 @@ It **deletes what it produced that is no longer useful** — unused code, supers
 notes, orphaned files — every round, not at the end of the project, and tells you what it removed and
 what it caught by itself. “All done” without this block does not count.
 
+![Every round, it cleans up after itself](assets/selfcheck.png)
+
 Why it matters: work that is never swept gets slower and less trustworthy every week — the opposite of
 what this skill is for.
 
