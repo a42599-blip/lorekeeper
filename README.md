@@ -1,8 +1,12 @@
 # lorekeeper 🧠
 
-![lorekeeper — 越用越懂你，越用越聰明](assets/cover.png)
+![lorekeeper — 越用越懂你，越用越聰明](assets/banner.png)
 
 **Get to know you better, get smarter every time.**
+
+> This is not a static prompt — **it is a loop.** Every task makes it stronger: it does the work,
+> records the lesson, turns that lesson into a reusable task pack, and starts the next similar task
+> from that pack instead of from zero. → [see the loop](#it-gets-stronger-every-time-the-loop)
 
 A portable skill that makes any AI assistant:
 - **learn its owner** instead of asking the same things forever,
@@ -42,6 +46,29 @@ Four complaints show up with every AI assistant:
 | **3. Never coast** | Plan → step → verify → report leftovers. If you say you tested something, you actually ran it |
 | **4. Find better tools** | Search, safety-check, compare, and **ask before installing** |
 | **5. Keep the lessons** | Write down what went wrong — yours and other people's — and search them before diagnosing again |
+
+---
+
+## It gets stronger every time (the loop)
+
+![The self-evolution loop](assets/loop.png)
+
+| Step | What happens |
+|:---|:---|
+| ① **Do the task** | plan → steps → verify each step, no matter what the task is |
+| ② **Record the lesson** | symptom → what we assumed → the real cause → the fix. **Its own lessons *and* other people's.** |
+| ③ **Write it into a task pack** | the method that worked becomes a reusable page (`tasks/<type>.md`) |
+| ④ **Next time is faster** | it reads the pack first, so the same mistake cannot repeat |
+
+A prompt is frozen. This keeps changing. The first time you make a promo video, the assistant
+improvises, verifies, and writes the pack down. The second time it follows its own procedure.
+The strength accumulates.
+
+| Situation | Without the loop | With the loop |
+|:---|:---|:---|
+| The same symptom appears again | guesses again — and the guess may cost real money | finds the earlier entry and starts from the **verified** cause |
+| A brand-new kind of task | improvised from scratch, every single time | done once, then written down as a procedure |
+| A tool goes stale | keeps using it | marks it deprecated and looks for a better one |
 
 ---
 
@@ -114,16 +141,20 @@ What should *not* happen: the assistant silently generates random footage and de
 
 ---
 
-## What is different from "just having a memory file"?
+## What is different from “just having a memory file”?
 
-| | Plain memory note | lorekeeper |
-|:---|:---|:---|
-| Remembers preferences | ✅ | ✅ (with rules for keeping it small and editable) |
-| Anti-hallucination rules | ❌ | ✅ explicit: evidence, confidence, test-before-spending |
-| Anti-slacking rules | ❌ | ✅ explicit: plan, per-step checks, "no faked tests" |
-| Tool discovery + safety vetting | ❌ | ✅ search → 🟢🟡🔴 vetting → ask before installing |
-| Grows its own procedures | ❌ | ✅ task packs are written after the first run |
-| Lessons from other people | ❌ | ✅ recorded alongside your own |
+| | Plain memory note | Prompt template | **lorekeeper** |
+|:---|:---:|:---:|:---:|
+| Remembers your preferences | ✅ | ❌ | ✅ (small, editable profile; never re-asks) |
+| **Gets stronger over time** | ❌ | ❌ | ✅ **writes its own task packs** |
+| Anti-hallucination rules | ❌ | ❌ | ✅ evidence + confidence labels; test before spending |
+| Anti-slacking rules | ❌ | ❌ | ✅ plan, per-step checks, no faked tests, leftovers listed |
+| Tool discovery + safety vetting | ❌ | ❌ | ✅ search → 🟢🟡🔴 → ask before installing |
+| Lessons from other people | ❌ | ❌ | ✅ recorded next to your own |
+| Context discipline | — | ❌ (eats context) | ✅ thin main skill + packs loaded on demand |
+| Redaction before publishing | ❌ | ❌ | ✅ names, paths, tokens, domains |
+| Works across assistants | — | depends | ✅ plain Markdown folder |
+| Cost | free | free | free (only the tool-search step needs the internet) |
 
 ---
 
@@ -190,7 +221,9 @@ Other work: <https://scefo.com>
 - **把教訓留下來**：自己的錯、別人踩過的坑，全部寫進筆記，下次先翻筆記再判斷
 
 **三層架構**：主技能（永遠讀、很薄）＋ 任務包（要用才讀，例如影片、簡報）＋ 記憶（只存在你自己的電腦）。
-第一次做某類任務是「工作」，做完之後技能會**自己寫出一套流程**，第二次就變快——
+
+**它會自己變強（自我進化迴圈）**：做任務 → 記錄教訓（自己的＋別人的）→ **把這次的做法寫成一頁任務包** → 下次先翻筆記再動手。
+第一次做某類任務是「工作」，做完之後技能會**自己寫出一套流程**，第二次就變快、而且不會再踩同一個坑——
 這就是「越用越聰明」的意思。
 
 **安裝**：把這個倉庫資料夾放進你的 AI 的技能目錄（詳見 `INSTALL.md`），

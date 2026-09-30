@@ -3,6 +3,18 @@
 All notable changes to this project are recorded here.
 Format: date — change. Versions are loose (this is a document-driven skill).
 
+## [0.2.0] — 2026-09-30
+
+Makes the self-evolution capability explicit — the part that makes it "stronger every time".
+
+- New README hero banner and a **self-evolution loop diagram**
+  (`assets/banner.png`, `assets/loop.png`).
+- New README section: **It gets stronger every time (the loop)** — do the task → record the lesson →
+  write the task pack → next time is faster, with a without-the-loop / with-the-loop comparison.
+- Comparison table expanded from 2 columns / 6 rows to 3 columns / 10 rows,
+  including context discipline, redaction before publishing, cross-assistant portability and cost.
+- Traditional Chinese section now states the loop explicitly.
+
 ## [0.1.1] — 2026-09-30
 
 Fixes found by validating against the Agent Skills specification.
