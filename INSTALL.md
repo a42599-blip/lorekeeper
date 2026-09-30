@@ -2,8 +2,14 @@
 
 **One minute. Pick ONE of the three ways below.** You do not need git, Python, or Node.
 
-> Not sure which one? Use **Way 1**. It is one sentence, pasted into your AI.
+| Who you are | Start here |
+|:---|:---|
+| 🤖 **An AI assistant** (Claude Code, Cursor, Codex, pi, …) | **[AGENTS.md](AGENTS.md)** — machine-readable install steps, required end state, verification, hard constraints |
+| 👤 **A person** | Read on. Not sure? Use **Way 1**. |
+
+> Not sure which way? Use **Way 1**. It is one sentence, pasted into your AI.
 > Or just paste this whole page to your AI and say *"install this for me."*
+> (Way 3's ZIP also contains `AGENTS.md`, so an AI that opens the unzipped folder knows what to do.)
 
 ---
 
@@ -98,6 +104,7 @@ Nothing is uploaded anywhere. To wipe everything it learned, delete that folder.
 2. **一行指令**：Windows 開 PowerShell 貼上面那行 `irm ... | iex`；Mac／Linux 開終端機貼 `curl ... | bash`。
 3. **完全不用指令**：下載 ZIP → 解壓 → 把資料夾改名成 `lorekeeper` → 放進你 AI 的技能資料夾（不知道放哪就問它「你從哪個資料夾讀技能？」）→ 重開 AI。
 > 看不懂沒關係：**把這一頁整份貼給你的 AI，叫它幫你裝**就好。
+> 🤖 **如果你是 AI**：請直接讀 [`AGENTS.md`](AGENTS.md)，裡面有機器看得懂的安裝步驟與驗證方法。
 
 ---
 

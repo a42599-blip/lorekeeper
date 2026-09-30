@@ -3,6 +3,25 @@
 All notable changes to this project are recorded here.
 Format: date — change. Versions are loose (this is a document-driven skill).
 
+## [0.4.0] — 2026-09-30
+
+**Now readable by people *and* by AI — including the ZIP route.**
+
+- **New `AGENTS.md`** (repository root): the instruction sheet for AI assistants. Exact install steps,
+  the required end state (`<skills dir>/lorekeeper/SKILL.md`), the verification to run before claiming
+  success, what not to touch, and a Chinese section. Because it sits at the repository root, any assistant
+  that opens the repo (or the unzipped ZIP) reads it automatically.
+- **New `llms.txt`**: a compact machine-readable index of the repository (what it is, how to install,
+  what it enforces, licence).
+- `README.md` now opens with a *choose your instruction sheet* line — 👤 people → `INSTALL.md`,
+  🤖 AI → `AGENTS.md`, 📄 machine summary → `llms.txt` — and gained a **Who it is for** section: this is
+  built for people who are not engineers, to remove everyday pain rather than add a tool to learn.
+- `INSTALL.md` gained the same split table and points AI assistants at `AGENTS.md`; it also notes that the
+  Way-3 ZIP contains `AGENTS.md`, so an AI opening the unzipped folder knows what to do.
+- **Health check added to the pre-commit hook** (`lorekeeper_健檢.py`): required files present, every relative
+  Markdown link resolves, `SKILL.md` frontmatter valid, exactly one `SKILL.md`, and the published install
+  commands present where they should be. A broken link or a missing file can no longer be committed.
+
 ## [0.3.0] — 2026-09-30
 
 **Installation rewritten so a non-technical person can do it.**

@@ -8,6 +8,11 @@
 > records the lesson, turns that lesson into a reusable task pack, and starts the next similar task
 > from that pack instead of from zero. → [see the loop](#it-gets-stronger-every-time-the-loop)
 
+**Choose your instruction sheet:**
+👤 **People** → keep reading, or jump straight to **[INSTALL.md](INSTALL.md)** (three ways to install, plain language)
+🤖 **AI assistants** → read **[AGENTS.md](AGENTS.md)** — it states the exact install steps, what to verify, and what not to touch
+📄 **Machine summary** → **[llms.txt](llms.txt)**
+
 A portable skill that makes any AI assistant:
 - **learn its owner** instead of asking the same things forever,
 - **find and compare real tools** instead of improvising with the first method it thinks of,
@@ -19,6 +24,23 @@ A portable skill that makes any AI assistant:
 > This skill is the keeper of its owner's accumulated knowledge — that is why it gets better over time.
 
 **中文介紹**：[跳到中文說明](#中文說明)
+
+---
+
+## Who it is for
+
+Built for **people who are not engineers** — the ones who know *something is wrong* but cannot
+explain it in technical words, and who should not have to learn what a “proxy” or a “config file”
+is to get help.
+
+| You are… | What this gives you |
+|:---|:---|
+| Tired of re-explaining yourself | A profile it keeps for you, so you never repeat yourself twice |
+| Ever told “it's your IP / your computer / your account” and it wasn't | A rule that forces **evidence before conclusions**, and a test before any spending |
+| Paying for the same mistake twice | A lesson ledger it reads before diagnosing |
+| Not a developer | Two-minute install, no git, no Python, no Node |
+
+The goal is simple: **remove everyday pain — not add one more tool to learn.**
 
 ---
 
@@ -131,6 +153,9 @@ put it in your assistant's skills folder (ask it: *"which folder do you load ski
 **Check it worked:** ask *"what do you know about me?"* — a working install says it has no profile yet
 and offers to start one.
 
+🔧 **AI assistants:** use [AGENTS.md](AGENTS.md) instead of this section — it contains the machine-readable
+steps, the required end state (`<skills dir>/lorekeeper/SKILL.md`) and what the installer must and must not do.
+
 Supported: **Windows, macOS, Linux**. Mobile assistants are not supported (they load skills differently).
 Full details, install-location options, troubleshooting and uninstall: **[INSTALL.md](INSTALL.md)**
 
@@ -236,7 +261,7 @@ Other work: <https://scefo.com>
 
 **安裝**：把這個倉庫資料夾放進你的 AI 的技能目錄（詳見 `INSTALL.md`），
 或直接跟你的 AI 說「幫我安裝這個技能：https://github.com/a42599-blip/lorekeeper」。
-支援 Windows / macOS / Linux；手機版 AI 不支援。
+**支援 Windows / macOS / Linux；手機版 AI 不支援。**
 
 **中文版**：`locales/zh-TW/SKILL.zh-TW.md`（想讓它當主檔就把那支檔案改名成 `SKILL.md`；
 一個技能資料夾只能有一個 `SKILL.md`）。

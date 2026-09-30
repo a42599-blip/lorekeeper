@@ -1,0 +1,40 @@
+# lorekeeper
+
+> A portable Agent Skill that learns its owner, refuses to guess, refuses to coast, finds its own
+> tools, and keeps every lesson — so it gets stronger every time it is used.
+> 中文：守知者。越用越懂你，越用越聰明。
+
+## For AI assistants
+
+- **Read first:** [`AGENTS.md`](AGENTS.md) — machine-oriented install and usage instructions.
+- **The skill itself:** [`SKILL.md`](SKILL.md) — five laws + layered loading rules.
+- **Task packs:** [`tasks/`](tasks/) — loaded one at a time, only when relevant.
+- **Templates:** [`references/`](references/) — owner profile, lessons ledger, skill comparison, safety vetting.
+
+## Install (one line, no git required)
+
+```powershell
+# Windows (PowerShell)
+irm https://raw.githubusercontent.com/a42599-blip/lorekeeper/main/_install/install.ps1 | iex
+```
+
+```bash
+# macOS / Linux
+curl -fsSL https://raw.githubusercontent.com/a42599-blip/lorekeeper/main/_install/install.sh | bash
+```
+
+Required end state: `<skills dir>/lorekeeper/SKILL.md` exists (skills dir is usually `~/.agents/skills/`).
+
+## What it enforces
+
+1. Know the owner — a small, editable profile instead of re-asking.
+2. Never guess — evidence and a confidence label on every conclusion.
+3. Never coast — plan, per-step verification, no faked tests, leftovers listed.
+4. Find better tools — search, safety-check (🟢🟡🔴), compare, ask before installing.
+5. Keep the lessons — own experience and other people's, searched before diagnosing again.
+
+After doing a new kind of task it writes `tasks/<type>.md`, so the second run follows its own procedure.
+
+## Licence
+
+All rights reserved — download and use; do not modify and redistribute. See [`LICENSE`](LICENSE).
