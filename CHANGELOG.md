@@ -3,6 +3,17 @@
 All notable changes to this project are recorded here.
 Format: date — change. Versions are loose (this is a document-driven skill).
 
+## [0.10.1] — 2026-09-30
+
+**The public repository now carries no link to anything else of the author's.**
+
+- Removed the external project link from the author line (English and Chinese halves). What remains is
+  only the GitHub account that owns this repository — nothing pointing at any private project,
+  brand or asset. The public skill is a self-contained tool: people download it and make it their own.
+- The redaction scan that guards the repository was tightened to match: it no longer accepts that
+  author-block exception, so any name, domain, private path or private file reference fails the
+  pre-commit check again.
+
 ## [0.10.0] — 2026-09-30
 
 **Two habits from real work, now part of the base skill: delete safely, and leave no temporary mess.**

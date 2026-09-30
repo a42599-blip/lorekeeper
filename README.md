@@ -284,7 +284,7 @@ not to accept modifications. Bug reports and suggestions are welcome in the issu
 See [LICENSE](LICENSE) for the full terms (`All rights reserved` — download and use, do not modify
 and redistribute, do not present it as your own).
 
-Built by [@a42599-blip](https://github.com/a42599-blip). Other work: <https://scefo.com>
+Built by [@a42599-blip](https://github.com/a42599-blip).
 
 ---
 
@@ -564,4 +564,4 @@ AI：  路線：精準型（用版面與截圖）——因為裡面有文字和�
 問題回報與建議歡迎開 issue。完整條款見 [LICENSE](LICENSE)
 （**保留所有權利**——可以下載使用，不能修改後再散布、不能當成自己的作品）。
 
-作者：[@a42599-blip](https://github.com/a42599-blip)。其他作品：<https://scefo.com>
+作者：[@a42599-blip](https://github.com/a42599-blip)。
