@@ -104,27 +104,35 @@ after that the skill writes its own procedure and the second time is fast.
 
 ## Install
 
-Two ways — pick either. **Full details: [INSTALL.md](INSTALL.md)**
+**Takes about a minute. Pick ONE — no git, Python or Node needed.**
 
-**A. Let your assistant install it (easiest)**
-
-Paste this to your AI assistant:
+**① Let your AI install it (easiest)** — paste this into your assistant:
 
 ```
-Install the lorekeeper skill for yourself and start using it:
-https://github.com/a42599-blip/lorekeeper
+Install the skill at https://github.com/a42599-blip/lorekeeper for yourself, then start using it.
 ```
 
-**B. Copy the folder (manual)**
+**② One line in the terminal**
 
-1. Download this repository (Code → Download ZIP) and unzip it.
-2. Copy the folder into your assistant's skills directory
-   (e.g. `~/.agents/skills/lorekeeper/`, `~/.claude/skills/lorekeeper/`, or your assistant's documented
-   skill location — see INSTALL.md for the list).
-3. Restart the assistant (or reload skills).
-4. Ask: *"what do you know about me?"* — a working install will say it has no profile yet and offer to start one.
+```powershell
+# Windows (PowerShell)
+irm https://raw.githubusercontent.com/a42599-blip/lorekeeper/main/_install/install.ps1 | iex
+```
 
-Supported: **Windows, macOS, Linux**. Mobile assistants: not supported (their skill loading differs).
+```bash
+# macOS / Linux
+curl -fsSL https://raw.githubusercontent.com/a42599-blip/lorekeeper/main/_install/install.sh | bash
+```
+
+**③ No terminal at all** — Code → Download ZIP → rename the folder to `lorekeeper` →
+put it in your assistant's skills folder (ask it: *"which folder do you load skills from?"*)
+→ restart.
+
+**Check it worked:** ask *"what do you know about me?"* — a working install says it has no profile yet
+and offers to start one.
+
+Supported: **Windows, macOS, Linux**. Mobile assistants are not supported (they load skills differently).
+Full details, install-location options, troubleshooting and uninstall: **[INSTALL.md](INSTALL.md)**
 
 ---
 

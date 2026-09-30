@@ -3,6 +3,21 @@
 All notable changes to this project are recorded here.
 Format: date — change. Versions are loose (this is a document-driven skill).
 
+## [0.3.0] — 2026-09-30
+
+**Installation rewritten so a non-technical person can do it.**
+
+- `INSTALL.md` restructured: three ways, easiest first — ① ask your AI to install it,
+  ② one line in the terminal, ③ download-and-copy with no terminal. Plain-language
+  troubleshooting table, install-location options, and uninstall steps.
+- `_install/install.sh` and `_install/install.ps1` rewritten:
+  - **no longer require git** (they download the repository ZIP and extract it),
+  - ASCII-only output so they cannot break on any console text encoding,
+  - clear success message plus the two next steps,
+  - optional `SKILLS_DIR` to choose the destination, `KEEP_TMP=1` to keep the temp files.
+- Both installers were **actually run on a clean target** (macOS/Linux script under bash, Windows
+  script under PowerShell) and verified to place `SKILL.md` correctly before this release.
+
 ## [0.2.0] — 2026-09-30
 
 Makes the self-evolution capability explicit — the part that makes it "stronger every time".
