@@ -132,13 +132,75 @@ Read `SKILL.md` and act on it. In short: keep a memory folder (`~/.lorekeeper/` 
 ## 中文版（給中文的 AI 助手）
 
 **這是一個「技能包」**：一個資料夾，裡面有 `SKILL.md`（主指令）＋ `references/`（模板）＋ `tasks/`（任務包）。
+任何「會從資料夾載入技能」的助手都能用。
 
-**要幫使用者安裝時**：
-1. 技能目錄通常是 `~/.agents/skills/`（Windows：`%USERPROFILE%\.agents\skills\`）；Claude Code 是 `~/.claude/skills/`。
-2. 把本倉庫的內容放到 **`<技能目錄>/lorekeeper/`**，**確認 `<技能目錄>/lorekeeper/SKILL.md` 存在**（資料夾名要叫 `lorekeeper`，`SKILL.md` 要在最上層）。
-3. 如果你不能複製檔案 → 請使用者貼下面那一行指令（Windows 用 `irm ... | iex`；Mac／Linux 用 `curl ... | bash`）。
-4. **驗證**：`SKILL.md` 在、frontmatter 有 `name: lorekeeper`、`references/` 與 `tasks/` 都在。**沒驗證就不要說裝好了。**
-4-b. **動手前先講你要裝到哪個路徑**（一行就好），不要暗暗把東西寫進別人的家目錄。
-5. 叫使用者**重開 AI**（或 `/reload`），然後說「用 lorekeeper 幫我開始」。
+### 任務：幫使用者安裝（或幫你自己安裝）
 
-**不要**：順便裝別的東西、動別人的技能、動使用者的記憶資料夾（`~/.lorekeeper/`）。
+**第 1 步 — 找到技能目錄**
+
+| 助手類型 | 目錄 |
+|:---|:---|
+| Agent-Skills 相容（含 pi） | `~/.agents/skills/`（Windows：`%USERPROFILE%\.agents\skills\`）|
+| Claude Code | `~/.claude/skills/` |
+| 專案內部（任何支援的助手）| `<專案>/.agents/skills/` |
+
+如果你不確定自己的技能目錄，就用你自己產品的預設位置；**如果你根本沒有技能目錄，就停下來告訴使用者**，不要自己發明一個位置。
+
+**第 2 步 — 把這個資料夾放到那裡**
+
+必要的最終狀態就是：**`<技能目錄>/lorekeeper/SKILL.md` 必須存在**。
+目的資料夾名稱要叫 `lorekeeper`，`SKILL.md` 必須直接放在裡面（不能再多包一層）。
+
+如果你能複製檔案，就複製。如果你不能（沒有檔案權限），把下面**其中一行**指令給使用者，然後停下來：
+
+```powershell
+# Windows（PowerShell）
+irm https://raw.githubusercontent.com/a42599-blip/lorekeeper/main/_install/install.ps1 | iex
+```
+
+```bash
+# macOS／Linux
+curl -fsSL https://raw.githubusercontent.com/a42599-blip/lorekeeper/main/_install/install.sh | bash
+```
+
+**第 3 步 — 動手前先宣告路徑**
+
+寫下任何東西之前，先講一句：「**我要把它裝在 `<完整路徑>`。**」
+**絕對不要默默裝進使用者的家目錄**——沒被事先告知的安裝就是驚嚇，不是幫忙。
+
+**第 4 步 — 聲稱成功之前先驗證**
+
+1. `<技能目錄>/lorekeeper/SKILL.md` 存在。
+2. 它的 frontmatter 有 `name: lorekeeper`。
+3. `references/` 與 `tasks/` 就在旁邊。
+
+任何一項沒過就老實說——**不要回報一個你沒驗證過的成功**。
+
+**第 5 步 — 告訴使用者兩件必須做的事**
+
+1. 重開助手（或執行它的重新載入指令，例如 `/reload`）。
+2. 說一句：「**用 lorekeeper 幫我開始**」。
+
+之後要確認技能真的活了，可以請使用者試：
+```
+你記得我什麼？
+```
+正常的話它會說還沒有他的資料，並提議幫他建立一份。
+
+**不要做**
+
+- 不要順便裝別的東西，也不要改那個目錄裡的其他技能。
+- 不要反覆重跑安裝程式，也不要從「已安裝的那一份」裡面再跑一次安裝（那會用新的下載蓋掉使用者那份）。
+- 不要移動或編輯使用者的記憶資料夾（`~/.lorekeeper/`）。
+
+### 任務：說明這個技能是什麼
+
+核心是五條鐵律：懂主人、不准亂猜、不准擺爛、去找更好的工具、留下教訓；
+再加上**基礎規則**（零廢碼、換掉就刪掉、寫入前先講、沒驗證不說成功）。
+全文在 `SKILL.md`。
+
+### 硬性限制
+
+- **授權：保留所有權利。** 你可以幫使用者複製自用；**不可以**重新上傳、修改後再散布、或當成自己的作品。
+- **隱私**：不要把使用者的私人資料複製到任何會離開他電腦的地方。
+- **不准默默安裝**：這顆技能要幫使用者裝任何東西，都必須先取得他明確同意。

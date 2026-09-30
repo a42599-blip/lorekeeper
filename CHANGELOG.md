@@ -3,6 +3,24 @@
 All notable changes to this project are recorded here.
 Format: date — change. Versions are loose (this is a document-driven skill).
 
+## [0.8.0] — 2026-09-30
+
+**The Chinese documentation is now a complete translation, not a summary — and the two languages never mix.**
+
+- `README.md` and `INSTALL.md` are now **two complete versions in one file**: a full English version,
+  then a full Chinese version, each with its own title, images, tables, install commands, FAQ and
+  troubleshooting. Nothing is abbreviated in the Chinese half any more.
+- Each half opens with a jump link in the *other* language, so a reader lands on the language they
+  can read immediately:
+  - top of the English half → 「👉 中文版說明在下面：**點這裡直接跳到中文版**」
+  - top of the Chinese half → *“👉 English version is above: click here to jump back up”*
+- **No language mixing**: the English half is English only (its own images included), the Chinese half
+  is Chinese only. That is why every diagram now has an English twin — `banner-en.png`, `loop-en.png`,
+  `process-en.png`, `compare-en.png`, `selfcheck-en.png` — and each half shows the images in its own language.
+- `AGENTS.md`: the Chinese section was expanded into a full mirror of the English instructions
+  (skills-directory table, required end state, announce-the-destination step, verification list,
+  the “do not” list), instead of the short summary it used to be.
+
 ## [0.7.1] — 2026-09-30
 
 - **Fixed a self-caught slip, and it is a good example of the rule working.** The orphan-file sweep
