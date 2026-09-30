@@ -1,5 +1,7 @@
 # lorekeeper 🧠
 
+![lorekeeper — 越用越懂你，越用越聰明](assets/cover.png)
+
 **Get to know you better, get smarter every time.**
 
 A portable skill that makes any AI assistant:
@@ -192,7 +194,10 @@ Other work: <https://scefo.com>
 這就是「越用越聰明」的意思。
 
 **安裝**：把這個倉庫資料夾放進你的 AI 的技能目錄（詳見 `INSTALL.md`），
-或直接跟你的 AI 說「幫我安裝這個技能：<網址>」。
+或直接跟你的 AI 說「幫我安裝這個技能：https://github.com/a42599-blip/lorekeeper」。
 支援 Windows / macOS / Linux；手機版 AI 不支援。
+
+**中文版**：`locales/zh-TW/SKILL.zh-TW.md`（想讓它當主檔就把那支檔案改名成 `SKILL.md`；
+一個技能資料夾只能有一個 `SKILL.md`）。
 
 **授權**：保留所有權利——**可以下載使用、可以推薦，但不能修改後再散布、不能當成自己的作品**。

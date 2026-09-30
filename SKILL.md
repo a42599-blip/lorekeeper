@@ -1,6 +1,7 @@
 ---
 name: lorekeeper
 description: Use for EVERY task, in every session. Makes the assistant learn its owner over time, find and adopt the best available skills instead of improvising, avoid AI hallucination (never guess without evidence), avoid lazy delivery (plan, verify, never fake testing), and keep a permanent record of lessons — its own and other people's — so the same mistake is never repeated. Trigger when the user says: start / do this / build this / make me a ... / help me with ... / new project, or any time the user asks for work of any kind.
+license: All rights reserved — see LICENSE
 ---
 
 # lorekeeper 🧠
@@ -237,7 +238,7 @@ The first time a task is done, it is work. The second time, it is procedure.
 | `references/safety-check.md` | 🟢🟡🔴 vetting of third-party skills |
 | `tasks/_TEMPLATE.md` | skeleton for a new task pack |
 | `tasks/video.md` | the video pack (precise / generative / hybrid routes) |
-| `locales/zh-TW/SKILL.md` | full Traditional Chinese version |
+| `locales/zh-TW/SKILL.zh-TW.md` | full Traditional Chinese version (rename it to `SKILL.md` to use it as the main file — only one `SKILL.md` may exist per skill) |
 
 ---
 

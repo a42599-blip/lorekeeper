@@ -3,6 +3,18 @@
 All notable changes to this project are recorded here.
 Format: date — change. Versions are loose (this is a document-driven skill).
 
+## [0.1.1] — 2026-09-30
+
+Fixes found by validating against the Agent Skills specification.
+
+- **Renamed** `locales/zh-TW/SKILL.md` → `locales/zh-TW/SKILL.zh-TW.md`.
+  Two files named `SKILL.md` in one skill folder are discovered as two skills with the same name
+  (name collision → the second one is dropped, or the skill fails to load in implementations that
+  require the declared name to match the folder). One folder, one `SKILL.md`.
+- Added the `license` frontmatter field (declared by the specification).
+- Added a cover image to the README.
+- README: real install URL in the Chinese section.
+
 ## [0.1.0] — 2026-09-30
 
 First release.
@@ -29,4 +41,4 @@ First release.
   Licence (all rights reserved / source-available).
 
 **Traditional Chinese**
-- Full translated skill under `locales/zh-TW/SKILL.md`.
+- Full translated skill under `locales/zh-TW/SKILL.zh-TW.md` (rename to `SKILL.md` to use it as the main file).
