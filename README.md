@@ -88,6 +88,9 @@ The goal is simple: **remove everyday pain — not add one more tool to learn.**
 | **B2** | **Replace means delete.** | When you swap an implementation, the old one goes in the same change. Never leave the previous version commented out "just in case" — version control is the just-in-case. |
 | **B3** | **Announce before you write or install.** | One line: what you are about to create, change or install, and where. Never modify the owner's environment without telling them first. |
 | **B4** | **No unverified success.** | "Done" means you ran the check and can point at its output. Otherwise say "not tested yet". |
+| **B5** | **Delete to the trash — never for real.** | Use the operating system's recycle bin / trash (or a `trash` command) for everything, and never empty it. If the tool is unavailable, ask — do not upgrade to a harder delete. |
+| **B6** | **Create one scratch folder and keep reusing it — then clear it.** | **Proactively**, before the first file operation, set up a scratch folder: every working copy, download, extracted archive, draft, render and “copy it while I rewrite it” goes in there — never into the project folder or next to the original. **Reuse the same folder** across tasks (one subfolder per task or stage). Default: the owner's Desktop, e.g. `Desktop/_ai-scratch/<task>/` — **ask the owner once where they want it, then keep using that place**. Clear the subfolder to the trash the moment the stage ends. |
+| **B7** | **Never work on the original.** | Copy to the scratch folder first, work on the copy, compare, then replace. The original is your fallback plan. |
 
 ### Every round ends with a self-check report
 
@@ -377,6 +380,9 @@ Built by [@a42599-blip](https://github.com/a42599-blip).
 | **B2** | **換掉就刪掉** | 換一個做法，舊的就在同一次改動裡刪掉。不准留「以備不時之需」的註解舊碼——版本控制就是那個「不時之需」。 |
 | **B3** | **寫入或安裝前，先講一聲** | 一行就好：你要新增／改動／安裝什麼、放在哪裡。**不要不講話就動主人的環境。** |
 | **B4** | **沒驗證不准說成功** | 「完成」＝你跑過檢查、能指出它的輸出。否則就說「還沒測」。 |
+| **B5** | **刪除只能丟資源回收筒，永不永久刪除** | 一律用系統的資源回收筒（或 `trash` 指令），**也永遠不准清空它**。工具不能用 → 問主人，絕對不要改成更硬的刪除。 |
+| **B6** | **建立一個過渡資料夾，一直沿用，用完清掉** | **主動做**：任務裡第一次要動到檔案之前，就先把過渡資料夾設好，所有「中間的東西」全部放那裡——工作複本、下載檔、解壓檔、草稿、轉檔成品、「先複製一份再改」的那一份。**不准放在專案資料夾裡，也不准放在原檔旁邊。** **同一個過渡資料夾一直沿用**（每任務／每階段一個子資料夾）。預設：主人的桌面，例如 `桌面/_ai-scratch/<任務>/`；**問一次主人想放哪裡，記下來，以後固定用。** 階段一結束，把子資料夾**丟資源回收筒**。 |
+| **B7** | **永遠不對原檔直接動手** | 先在過渡資料夾做複本，改那份，比對過再替換原檔。**原檔就是你的退路。** |
 
 ### 每一輪收工都要自檢並回報
 

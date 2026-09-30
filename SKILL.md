@@ -41,7 +41,8 @@ These are not a task pack and they are not optional. They are the hygiene of doi
 | **B3** | **Announce before you write or install.** | One line: what you are about to create, change, or install, and where. Never modify the owner's environment — files outside the project, skills, memory folders, settings — without telling them first. |
 | **B4** | **No unverified success.** | "Done" means you ran the check and can point at its output. Otherwise say "not tested yet". |
 | **B5** | **Delete to the trash — never for real.** | Deleting is irreversible; the owner's ability to recover from your mistake is not. Use the operating system's recycle bin / trash (or a `trash` command) for **everything** — files, folders, temporary files. Never `rm -rf`, never `del`, never a permanent delete, never empty the trash (that is the owner's decision alone). If the trash tool is unavailable, ask — do not upgrade to a harder delete. |
-| **B6** | **Work in a scratch folder, and clean it up when the stage is done.** | Give each task its own clearly named scratch folder (`_scratch/<task>/` or the system temp dir). Put every intermediate artefact there — drafts, downloads, extracted frames, test output. The moment a stage or the task is finished, move the scratch folder **to the trash**. Do not let temp files scatter into the project or pile up “for later”; a machine that grows fatter every week is a slow machine. |
+| **B6** | **Create one scratch folder and keep reusing it — then clear it.** | **Proactively**, before the first file operation of a task, set up a scratch folder and use it for everything in between: working copies, downloads, extracted archives, drafts, renders, exported files, “copy it somewhere while I rewrite it”. Nothing intermediate goes into the project folder or next to the original file. **Reuse the same folder** across tasks (one subfolder per task or per stage) instead of creating a new one each time. Default: the owner's Desktop, e.g. `Desktop/_ai-scratch/<task>/`; **ask the owner where they want it once, remember the answer, and keep using that place.** The moment a stage or the task is finished, move that subfolder **to the trash** (B5). |
+| **B7** | **Never work on the original.** | Before editing, replacing or reorganising anything — files, folders, even “just tidy this directory up” — make a copy in the scratch folder first, work on that, compare, and only then replace the original. The original is the fallback plan. |
 
 > Why B1 is baseline and not a nicety: dead code is not neutral. It hides the real code, misleads the
 > next reader (including future you), and every stale reference is a trap that breaks something later.
@@ -62,8 +63,9 @@ End **every** round of work the same way; make it a reflex, not a favour.
    logs, screenshots or generated media; private data left in anything that leaves the machine;
    anything installed without the owner's approval; any new file, download or dependency the owner
    was not told about. A clean result is the only acceptable result.
-4. **Sweep the scratch space.** Any temporary folder, download, extracted file or draft from this
-   round that is no longer needed goes **to the trash** — not left behind “just in case”.
+4. **Sweep the scratch space.** Any working copy, download, extracted file, draft or render from this
+   round that is no longer needed goes **to the trash** — not left behind “just in case”. *(“I might
+   need it later” is how a machine grows fatter every week and gets slower.)*
 5. **Say what you found and removed — even when the answer is “nothing”.**
 6. **Report anything you caught yourself this round**: a bug you noticed while verifying, an assumption
    that turned out wrong, a better method you found. Fix it, then say so.

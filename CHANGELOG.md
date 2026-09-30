@@ -3,6 +3,22 @@
 All notable changes to this project are recorded here.
 Format: date — change. Versions are loose (this is a document-driven skill).
 
+## [0.10.2] — 2026-09-30
+
+**The scratch-folder rule is now spelled out properly — because that is the thing that stops a machine from quietly growing.**
+
+- **B6 rewritten** (both languages, plus both README halves): set up the scratch folder **proactively,
+  before the first file operation**, and keep **reusing the same one** (one subfolder per task or stage).
+  Every working copy, download, extracted archive, draft, render and “copy it while I rewrite it” goes
+  there — never into the project folder and never next to the original file. Default location: the
+  owner's Desktop, e.g. `Desktop/_ai-scratch/<task>/` — **ask the owner once where they want it, then
+  keep using that place**. Clear the subfolder to the trash the moment the stage ends.
+- **B7 added: never work on the original.** Copy to the scratch folder first, work on the copy, compare,
+  then replace. The original is the fallback plan.
+- The round self-check line now spells out the reason: *“I might need it later” is how a machine grows
+  fatter every week and gets slower.*
+- Covers everyday requests too — including “just tidy this folder up”, which is a file-copying task.
+
 ## [0.10.1] — 2026-09-30
 
 **The public repository now carries no link to anything else of the author's.**
