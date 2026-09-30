@@ -3,6 +3,24 @@
 All notable changes to this project are recorded here.
 Format: date — change. Versions are loose (this is a document-driven skill).
 
+## [0.9.0] — 2026-09-30
+
+**The strength is now impossible to miss — a shop-window sticker, and security joins the per-round check.**
+
+- **Security added to the round self-check** (SKILL.md both languages, README both languages):
+  every round also sweeps for **leaked secrets or tokens** (in code, documents, commits, logs,
+  screenshots, generated media), **private data leaving the machine**, and **anything installed
+  without the owner's approval**. Report line: `security ...... clean`.
+  A clean result is the only acceptable result.
+- **A big sticker on the diagrams** — the make-or-break claim is no longer small grey text.
+  All ten diagrams (five Chinese, five English) now carry a rotated, glowing badge reading
+  **每輪質檢 / 0 / 廢碼 · 安全隱患** (English: **EVERY ROUND / 0 / DEAD CODE · SECURITY**).
+  On the banner it sits in its own column; on the other diagrams it sits top-right.
+- **The report block is no longer faint either**: the two `0`s in the self-check diagram are rendered
+  at display size, with `security  clean` beside them.
+- **The Chinese diagrams are now Chinese-only**, headlines included — the English headlines that were
+  still sitting on top of the Chinese versions are gone, so each language version is pure.
+
 ## [0.8.0] — 2026-09-30
 
 **The Chinese documentation is now a complete translation, not a summary — and the two languages never mix.**

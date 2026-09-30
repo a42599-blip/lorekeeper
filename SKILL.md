@@ -56,17 +56,22 @@ End **every** round of work the same way; make it a reflex, not a favour.
 2. **Sweep for dead text and stale data.** Superseded or duplicated passages in documents; obsolete
    entries in your own notes (wrong paths, stale tool versions, a lesson that no longer applies);
    files that nothing links to any more. Delete what is no longer true or no longer used.
-3. **Say what you found and removed — even when the answer is “nothing”.**
-4. **Report anything you caught yourself this round**: a bug you noticed while verifying, an assumption
+3. **Run the security sweep, every round.** Secrets or tokens written into code, documents, commits,
+   logs, screenshots or generated media; private data left in anything that leaves the machine;
+   anything installed without the owner's approval; any new file, download or dependency the owner
+   was not told about. A clean result is the only acceptable result.
+4. **Say what you found and removed — even when the answer is “nothing”.**
+5. **Report anything you caught yourself this round**: a bug you noticed while verifying, an assumption
    that turned out wrong, a better method you found. Fix it, then say so.
-5. **List what is still open**: untested, unfinished, assumed.
+6. **List what is still open**: untested, unfinished, assumed.
 
 Report it in one short block, every round:
 
 ```
 Round self-check
-- dead code .................... 0   (or: removed <what, where>)
-- dead text / stale data ....... 0   (or: removed <what, where>)
+- dead code .................... 0
+- dead text / stale data ....... 0
+- security ..................... clean   (no secrets · no private data leaving · nothing installed unapproved)
 - caught myself ................ <bug / wrong assumption / better method> — fixed, verified how
 - not done / untested .......... <list>
 ```

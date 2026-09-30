@@ -98,6 +98,7 @@ Before reporting back, the assistant sweeps its own work and says so — the way
 Round self-check
 - dead code .......... 0     (or: removed <what, where>)
 - dead text/stale data 0     (or: removed <what, where>)
+- security .......... clean  (no secrets · no private data leaving · nothing installed unapproved)
 - caught myself ..... <a bug it noticed · a wrong assumption · a better method> — fixed, verified how
 - not done / untested <list>
 ```
@@ -239,7 +240,7 @@ dead text and stale notes — and tells you what it caught).
 | **Gets stronger over time** | ❌ | ❌ | ✅ **writes its own task packs** |
 | Anti-hallucination rules | ❌ | ❌ | ✅ evidence + confidence labels; test before spending |
 | Anti-slacking rules | ❌ | ❌ | ✅ plan, per-step checks, no faked tests, leftovers listed |
-| **No dead code / no dead text** | ❌ | ❌ | ✅ enforced **and reported** every round |
+| **No dead code / no dead text / no security slips** | ❌ | ❌ | ✅ enforced **and reported** every round |
 | Tool discovery + safety vetting | ❌ | ❌ | ✅ search → 🟢🟡🔴 → ask before installing |
 | Lessons from other people | ❌ | ❌ | ✅ recorded next to your own |
 | Context discipline | — | ❌ (eats context) | ✅ thin main skill + packs loaded on demand |
@@ -383,6 +384,7 @@ Built by [@a42599-blip](https://github.com/a42599-blip). Other work: <https://sc
 本輪自檢
 - 廢碼 .............. 0     （或：刪掉了〈什麼、在哪〉）
 - 廢文字／過期資料 .... 0     （或：刪掉了〈什麼、在哪〉）
+- 安全隱患 .......... 乾淨（無外洩金鑰 · 無私人資料外流 · 無未經同意的安裝）
 - 我自己抓到 ......... 〈發現的 bug／想錯的假設／更好的做法〉——已修，怎麼驗證的
 - 還沒做／沒測 ....... 〈列出〉
 ```
@@ -518,7 +520,7 @@ AI：  路線：精準型（用版面與截圖）——因為裡面有文字和�
 | **越用越強** | ❌ | ❌ | ✅ **自己寫任務包** |
 | 防幻覺規則 | ❌ | ❌ | ✅ 證據＋把握程度；花錢前先測試 |
 | 防偷懶規則 | ❌ | ❌ | ✅ 計畫、每步檢查、不假裝測過、列出沒做完的 |
-| **零廢碼／零廢文字** | ❌ | ❌ | ✅ 每一輪執行**並回報** |
+| **零廢碼／零廢文字／零安全隱患** | ❌ | ❌ | ✅ 每一輪執行**並回報** |
 | 工具搜尋＋安全體檢 | ❌ | ❌ | ✅ 搜尋 → 🟢🟡🔴 → 要裝前先問 |
 | 記錄別人的教訓 | ❌ | ❌ | ✅ 跟自己的記在一起 |
 | 上下文紀律 | — | ❌（吃光上下文）| ✅ 主技能薄＋任務包按需載入 |
