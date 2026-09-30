@@ -3,6 +3,21 @@
 All notable changes to this project are recorded here.
 Format: date — change. Versions are loose (this is a document-driven skill).
 
+## [0.11.1] — 2026-09-30
+
+**The delete rule was written but not *visible*. Now it is.**
+
+- **A prominent callout in both README halves** — *“🔒 Delete safely — this one is not negotiable”* /
+  「🔒 刪除一律只進資源回收筒——這條沒有商量餘地」: everything deleted goes to the recycle bin / trash,
+  never a permanent delete, the assistant never empties the trash (that is the owner's decision), and if
+  the trash tool is unavailable it stops and asks rather than using a harder delete.
+- **The self-check diagram now shows it**, not just the text: a highlighted box under the report block —
+  「🗑️ 刪除一律只進資源回收筒，永不永久刪除，也不自行清空回收筒」 (English equivalent).
+- **The process diagram's scratch-folder band states it too**: deletes are trash-only, never permanent.
+- The rule was already in `SKILL.md` B5 (both languages), `AGENTS.md` and `llms.txt`; this release makes it
+  impossible to miss on the front page. Fixed at the same time: a duplicated subtitle in the Chinese
+  self-check diagram and a footer clipped by the new content.
+
 ## [0.11.0] — 2026-09-30
 
 **The scratch-folder workflow is now written into the manual itself — and everything that describes it moved together.**

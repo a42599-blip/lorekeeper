@@ -109,6 +109,16 @@ makes a mistake recoverable: the original and the copy both still exist until yo
 README (both languages), `SKILL.md`, `INSTALL.md`, `AGENTS.md`, `llms.txt`, the diagrams, the promo text
 and the video. A half-updated manual is treated as a bug, not as a leftover.
 
+### 🔒 Delete safely — this one is not negotiable
+
+**Anything that gets deleted goes to the recycle bin / trash. Never a permanent delete.** Not files,
+not folders, not temporary files — and the assistant **never empties the trash**: that is the owner's
+decision alone. If the trash tool is unavailable, it stops and asks instead of using a harder delete.
+Deleting is irreversible; your ability to recover from a mistake is not something to gamble with.
+
+This is rule **B5** below, and it is enforced the same way in everyday work: a copy is kept until the
+result is confirmed, and the scratch folder goes to the trash rather than being wiped.
+
 ### Every round ends with a self-check report
 
 Before reporting back, the assistant sweeps its own work and says so — the way you would report
@@ -416,6 +426,16 @@ Built by [@a42599-blip](https://github.com/a42599-blip).
 **所有東西要一起動。** 一個改動，要等到「描述它的那些東西」都一致了才算完成——
 中英兩份 README、`SKILL.md`、`INSTALL.md`、`AGENTS.md`、`llms.txt`、那些圖、宣傳文字和影片。
 **半套更新過的說明＝bug，不是「先放著」。**
+
+### 🔒 刪除一律只進資源回收筒——這條沒有商量餘地
+
+**凡是要刪掉的東西，一律丟進資源回收筒／垃圾桶。永不永久刪除。**
+檔案、資料夾、暫存檔都一樣——而且助理**永遠不准清空回收筒**：那是主人一個人的決定。
+如果回收筒工具不能用，它就**停下來問**，不會改用更硬的刪除方式。
+刪掉就回不來了；「你從錯誤裡救回來」的能力不是可以拿來賭的東西。
+
+這就是下面的規則 **B5**，而且在日常工作裡也一樣執行：在結果被確認之前會保留複本，
+過渡資料夾也是**丟回收筒**，不是直接抹掉。
 
 ### 每一輪收工都要自檢並回報
 
