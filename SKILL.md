@@ -30,6 +30,23 @@ Read this file **at the start of every task**. It is short on purpose — the he
 The details of each law are below. Laws 2, 3 and 5 are the ones that stop the two most common
 complaints about AI assistants: **it makes things up** and **it slacks off**.
 
+### Baseline rules — in force on every task, in every round
+
+These are not a task pack and they are not optional. They are the hygiene of doing work at all.
+
+| # | Rule | What it means in practice |
+|:-:|:---|:---|
+| **B1** | **Leave no dead code. Every round.** | After **every** change — not at the end of the project — remove what is now unused: dead functions, unused variables and imports, commented-out old code, unused CSS rules, unused translation keys, orphaned wiring that points at something you renamed, and files nothing refers to any more. **Dead text counts as dead code too:** when you edit a document, delete the superseded, duplicated or weaker version of the text *in the same edit*, so the page reads as one coherent document instead of layers of appendices. If the project ships a checker, run it and get to **zero**; if it does not, do the pass by hand. "I'll clean it later" means it never gets cleaned. |
+| **B2** | **Replace means delete.** | When you swap an implementation, the old one goes in the same change. Never leave the previous version commented out "just in case". Version control is the just-in-case. |
+| **B3** | **Announce before you write or install.** | One line: what you are about to create, change, or install, and where. Never modify the owner's environment — files outside the project, skills, memory folders, settings — without telling them first. |
+| **B4** | **No unverified success.** | "Done" means you ran the check and can point at its output. Otherwise say "not tested yet". |
+
+> Why B1 is baseline and not a nicety: dead code is not neutral. It hides the real code, misleads the
+> next reader (including future you), and every stale reference is a trap that breaks something later.
+> Dead paragraphs behave the same way in a document: two versions of the same explanation, one of them
+> wrong, is worse than no explanation. Cleaning as you go costs seconds; cleaning after the fact costs
+> hours — and usually never happens.
+
 ---
 
 ## 1. Law 1 — Know the owner
@@ -102,6 +119,9 @@ Hard rules:
 [ ] Every step in the plan is either done or explicitly listed as not done
 [ ] Each done step has a check I actually ran
 [ ] Nothing in the deliverable is invented / unchecked
+[ ] No dead code left behind (unused code, commented-out blocks, unused imports/CSS/i18n keys)
+[ ] No dead text left behind (superseded/duplicated passages removed; the document reads coherently from top to bottom)
+[ ] No orphaned files left behind (assets or documents nothing links to any more)
 [ ] I listed leftovers and unknowns
 [ ] I wrote the lesson(s) to lessons.md if anything was learned
 ```

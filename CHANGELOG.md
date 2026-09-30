@@ -3,6 +3,22 @@
 All notable changes to this project are recorded here.
 Format: date — change. Versions are loose (this is a document-driven skill).
 
+## [0.5.0] — 2026-09-30
+
+**AI instructions are now visible on the front page, and dead text counts as dead code.**
+
+- **`README.md` carries the full AI instruction block inline** (🤖 AI 請看這邊 / AI assistants, read this,
+  bilingual) — no folder-digging required. A person sees “AI, read this block”, reads the section below it.
+  The long-form copy still lives in `AGENTS.md` / `llms.txt` for machines.
+- **New baseline rule B1 (in `SKILL.md`, both languages)**: no dead code — and **dead text counts as
+  dead code**. Every edit must delete the superseded, duplicated or weaker version of the text in the
+  same change, and remove files nothing links to any more. The definition-of-done list now checks for
+  dead text and orphaned files, not just dead code.
+- **The rule was applied to this repository** rather than just written down: `README.md` was rewritten as
+  one coherent document (duplicated install steps, the redundant “instruction sheet” block, and the
+  overlapping *Who it is for* / *Why this exists* sections were merged or removed), the Chinese section
+  lost its duplicated install steps, and the now-unreferenced `assets/cover.png` was deleted.
+
 ## [0.4.1] — 2026-09-30
 
 - `AGENTS.md`: added one rule learned from a live test — **state the destination path before writing**
