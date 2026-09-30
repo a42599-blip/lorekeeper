@@ -50,7 +50,23 @@ and you do not move on until that check passes.
 
 ## 3. Fixed rules for this task type
 
-- Text on screen: **layout it, never generate it.** Generated lettering comes out wrong; laid-out text is exact.
+### Narration quality — check the voice-over line by line
+
+- **Listen to every line before delivering.** Not the waveform — the actual voice.
+- **Rate: moderate.** If a line feels rushed, fix the *sentence*, not the speed knob. A male voice
+  usually needs a slower setting than a female one for the same script (observed: female ≈ `+5%`,
+  male ≈ `0%` or below — never assumed, always listened to).
+- **Watch for characters with multiple readings** (Chinese 多音字, and any similarly ambiguous word).
+  Either rewrite the sentence to dodge the ambiguity, or force the intended reading. A wrong reading is
+  a defect, not a nuance.
+- **Shorten, do not compress.** A mechanical-sounding sentence usually needs fewer clauses and more
+  punctuation (the engine turns punctuation into real pauses), not a higher rate.
+- **Check the seams:** no overlapping narration, a small gap between lines, consistent loudness.
+- If a line still sounds wrong after two attempts, **rewrite the sentence** — never ship a line the
+  owner would notice.
+- Record the chosen voice and rate in the pack, so the next video starts from a known-good combination.
+
+### Text on screen **layout it, never generate it.** Generated lettering comes out wrong; laid-out text is exact.
 - Annotations (boxes, circles, arrows, step numbers) are drawn, not generated.
 - Keep a fixed set of 5–6 reusable frame layouts (opening / feature / comparison / steps / closing).
   Reuse beats reinvention; consistent motion and type make it look intentional.
@@ -82,6 +98,9 @@ and you do not move on until that check passes.
 
 | Trap | Symptom | Fix |
 |:---|:---|:---|
+| Robotic narration | Flat, mechanical delivery | Shorter sentences, more punctuation, moderate rate |
+| Rushed male voice | Words run together | Lower the rate for male voices; listen to every line |
+| Wrong character reading | A word is read with the wrong pronunciation | Rewrite the sentence or specify the reading (多音字) |
 | Guessed timeline | narration overlaps at the seams | audio first, measure, then place |
 | Generated text | garbled letters on screen | layout frames as web pages, screenshot them |
 | One-shot generation | random visuals, nothing matches the script | 8-step pipeline with per-step checks |

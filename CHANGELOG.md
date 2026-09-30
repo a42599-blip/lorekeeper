@@ -3,6 +3,27 @@
 All notable changes to this project are recorded here.
 Format: date — change. Versions are loose (this is a document-driven skill).
 
+## [0.12.0] — 2026-09-30
+
+**The video pack now carries a narration-quality checklist — learned from a real delivered video.**
+
+`tasks/video.md` gained a **Narration quality** block, because the first promo video we shipped was
+good but the voice was still too mechanical:
+
+- **Listen to every line before delivering** — the voice, not the waveform.
+- **Rate: moderate.** If a line feels rushed, fix the *sentence*, not the speed knob. A male voice
+  usually needs a slower setting than a female voice for the same script (observed: female ≈ +5%,
+  male ≈ 0% or below — never assumed, always listened to).
+- **Watch for characters with multiple readings** (Chinese 多音字 and similar): rewrite the sentence to
+  dodge the ambiguity, or force the intended reading. A wrong reading is a defect, not a nuance.
+- **Shorten, do not compress.** A mechanical-sounding line usually needs fewer clauses and more
+  punctuation — the engine turns punctuation into real pauses.
+- **Check the seams** (no overlap, small gaps, even loudness), and if a line still sounds wrong after two
+  attempts, **rewrite the sentence** rather than shipping something the owner will notice.
+- Record the chosen voice and rate in the pack, so the next video starts from a known-good combination.
+
+The known-traps table gained three matching rows: robotic narration, rushed male voice, wrong reading.
+
 ## [0.11.2] — 2026-09-30
 
 **The trash-only delete rule now appears in every layer of the public repository.**
