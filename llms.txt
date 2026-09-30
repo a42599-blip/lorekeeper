@@ -33,6 +33,13 @@ Required end state: `<skills dir>/lorekeeper/SKILL.md` exists (skills dir is usu
 4. Find better tools — search, safety-check (🟢🟡🔴), compare, ask before installing.
 5. Keep the lessons — own experience and other people's, searched before diagnosing again.
 
+Baseline rules, every round: no dead code (and no dead text) · announce before writing or installing ·
+no unverified success · **delete to the trash, never for real** · **one scratch folder, reused, cleared
+when the stage ends** · never edit the original in place. Each round closes with a self-check report
+(dead code · dead text/stale data · security · scratch files · what it caught itself · leftovers), and a
+change is not finished until the README, SKILL, INSTALL, AGENTS, llms.txt, diagrams and promo material
+all say the same thing.
+
 After doing a new kind of task it writes `tasks/<type>.md`, so the second run follows its own procedure.
 
 ## Licence

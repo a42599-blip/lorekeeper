@@ -3,6 +3,28 @@
 All notable changes to this project are recorded here.
 Format: date — change. Versions are loose (this is a document-driven skill).
 
+## [0.11.0] — 2026-09-30
+
+**The scratch-folder workflow is now written into the manual itself — and everything that describes it moved together.**
+
+- **New README section, both languages: “How a change actually flows (including the scratch folder).”**
+  It explains the whole habit in prose, not just as a rule: one scratch folder (default on the Desktop,
+  location confirmed with the owner once), working copies and drafts live there, the original is never
+  edited in place, the scratch subfolder goes to the trash when the stage or deployment is confirmed, and
+  only the final version goes back into the project. It also states why: a machine that is never swept
+  gets slower every week, and keeping the original plus the copy until the result is confirmed is what
+  makes a mistake recoverable.
+- **The process diagram now shows it**: a dedicated band under the task flow —
+  *before any file work: create a scratch folder → copies, downloads, drafts and renders live there →
+  stage done and deployment confirmed: move it to the trash → only the final version goes back into the
+  project.* The self-check diagram also gained its `scratch files ...... none left` line.
+- **“Everything travels together” is now an explicit rule** in the README (both languages), `AGENTS.md`
+  and `llms.txt`: a change is not finished until README (both languages), `SKILL.md`, `INSTALL.md`,
+  `AGENTS.md`, `llms.txt`, the diagrams and the promo material all say the same thing. A half-updated
+  manual is a bug, not a leftover.
+- Fixed while reviewing the diagrams: the Chinese process diagram had a duplicated headline, and the
+  sticker was overlapping the last step card.
+
 ## [0.10.2] — 2026-09-30
 
 **The scratch-folder rule is now spelled out properly — because that is the thing that stops a machine from quietly growing.**

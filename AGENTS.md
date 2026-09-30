@@ -116,6 +116,14 @@ The full text is in `SKILL.md`; Traditional Chinese in `locales/zh-TW/SKILL.zh-T
 Read `SKILL.md` and act on it. In short: keep a memory folder (`~/.lorekeeper/` by default) with
 `owner.md`, `lessons.md`, `skills.md`; load one task pack at a time; and honour the five laws above.
 
+Also honour the baseline rules: no dead code (or dead text), announce before you write or install,
+never claim an unverified success, **delete to the trash rather than for real**, keep **one scratch
+folder** that you reuse and clear when the stage ends, and never edit an original file in place.
+
+**Keep the documentation in sync.** If you change behaviour, the thing that describes it must change in
+the same round — `SKILL.md`, this file, `README.md` (both languages), `INSTALL.md`, `llms.txt`, the
+diagrams in `assets/`, and any promo material. A half-updated manual is a bug.
+
 ---
 
 ## 4. Hard constraints (do not violate)

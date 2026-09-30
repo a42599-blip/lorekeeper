@@ -92,6 +92,23 @@ The goal is simple: **remove everyday pain — not add one more tool to learn.**
 | **B6** | **Create one scratch folder and keep reusing it — then clear it.** | **Proactively**, before the first file operation, set up a scratch folder: every working copy, download, extracted archive, draft, render and “copy it while I rewrite it” goes in there — never into the project folder or next to the original. **Reuse the same folder** across tasks (one subfolder per task or stage). Default: the owner's Desktop, e.g. `Desktop/_ai-scratch/<task>/` — **ask the owner once where they want it, then keep using that place**. Clear the subfolder to the trash the moment the stage ends. |
 | **B7** | **Never work on the original.** | Copy to the scratch folder first, work on the copy, compare, then replace. The original is your fallback plan. |
 
+### How a change actually flows (including the scratch folder)
+
+Before touching any file, the assistant sets up **one scratch folder** — by default on your Desktop
+(it asks once where you want it, then keeps using that place). Working copies, downloads, extracted
+archives, drafts, renders, screenshots and “copy it while I rewrite it” all live there — **never inside
+your project folder, never next to the original file**. The original is never edited in place: a copy is
+edited, compared, and only then swapped in. When the stage is finished — or the change is deployed and
+confirmed — that scratch subfolder goes **to the trash**, and **only the final version is put back into
+the project**.
+
+That one habit is what stops a machine from growing fatter every week and getting slower, and it is what
+makes a mistake recoverable: the original and the copy both still exist until you have confirmed the result.
+
+**Everything travels together.** A change is not finished until the things that describe it agree — this
+README (both languages), `SKILL.md`, `INSTALL.md`, `AGENTS.md`, `llms.txt`, the diagrams, the promo text
+and the video. A half-updated manual is treated as a bug, not as a leftover.
+
 ### Every round ends with a self-check report
 
 Before reporting back, the assistant sweeps its own work and says so — the way you would report
@@ -383,6 +400,22 @@ Built by [@a42599-blip](https://github.com/a42599-blip).
 | **B5** | **刪除只能丟資源回收筒，永不永久刪除** | 一律用系統的資源回收筒（或 `trash` 指令），**也永遠不准清空它**。工具不能用 → 問主人，絕對不要改成更硬的刪除。 |
 | **B6** | **建立一個過渡資料夾，一直沿用，用完清掉** | **主動做**：任務裡第一次要動到檔案之前，就先把過渡資料夾設好，所有「中間的東西」全部放那裡——工作複本、下載檔、解壓檔、草稿、轉檔成品、「先複製一份再改」的那一份。**不准放在專案資料夾裡，也不准放在原檔旁邊。** **同一個過渡資料夾一直沿用**（每任務／每階段一個子資料夾）。預設：主人的桌面，例如 `桌面/_ai-scratch/<任務>/`；**問一次主人想放哪裡，記下來，以後固定用。** 階段一結束，把子資料夾**丟資源回收筒**。 |
 | **B7** | **永遠不對原檔直接動手** | 先在過渡資料夾做複本，改那份，比對過再替換原檔。**原檔就是你的退路。** |
+
+### 一次改動實際上是怎麼跑的（含過渡檔）
+
+動手改任何檔案之前，助理會先建立**一個過渡資料夾**——預設放在你的桌面
+（它會問一次你想放哪，之後就一直用那個位置）。工作複本、下載檔、解壓後的檔案、草稿、
+轉出的成品、截圖、「先複製一份再改」的那一份，**全部放在那裡**——**絕不進你的專案資料夾，
+也絕不放在原檔旁邊**。原檔永遠不會被直接改：改的是複本，比對過，才替換回去。
+階段結束——或改動已部署並確認——那個過渡子資料夾就**丟資源回收筒**，
+**只有最終版會放回專案裡**。
+
+光是這個習慣，就能讓一台電腦不會每過一週就肥一圈、越來越慢；也讓做錯的事有救：
+在你確認結果之前，原檔和複本都還在。
+
+**所有東西要一起動。** 一個改動，要等到「描述它的那些東西」都一致了才算完成——
+中英兩份 README、`SKILL.md`、`INSTALL.md`、`AGENTS.md`、`llms.txt`、那些圖、宣傳文字和影片。
+**半套更新過的說明＝bug，不是「先放著」。**
 
 ### 每一輪收工都要自檢並回報
 
